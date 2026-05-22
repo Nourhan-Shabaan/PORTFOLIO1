@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourhan Mohamed | Web Developer & Statistician</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        premiumBlue: '#df0139',
+                        darkBg: '#000000',
+                        darkCard: '#0A0C12',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 135, 135, 0.85);
+        }
+        .dark .glass-nav {
+            background-color: rgba(11, 16, 29, 0.85);
+        }
+        .hero-img-container {
+            position: relative;
+        }
+        .hero-img-container::after {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+      
+
+.cert-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  background-color: rgba(15, 23, 42, 0.85);
+  border-radius: 0;
+   transform:scale(2);
+}
+
+
+    </style>
+</head>
+<body class="bg-white text-slate-900 dark:bg-darkBg dark:text-white transition-colors duration-300 font-sans">
+
+    <nav class="fixed w-full z-50 top-0 glass-nav border-b border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="text-2xl font-black tracking-tighter text-premiumBlue uppercase">Nourhan</div>
+                
+                <div class="hidden lg:flex space-x-8 items-center text-sm font-semibold">
+                    <a href="#home" class="hover:text-premiumBlue transition">Home</a>
+                    <a href="#about" class="hover:text-premiumBlue transition">About</a>
+                    <a href="#education" class="hover:text-premiumBlue transition">Education</a>
+                    <a href="#experience" class="hover:text-premiumBlue transition">Experience</a>
+                    <a href="#Certificates" class="hover:text-premiumBlue transition">Certificates</a>
+                    <a href="#skills" class="hover:text-premiumBlue transition">Skills</a>
+                    <a href="#projects" class="hover:text-premiumBlue transition">Projects</a>
+                    <a href="#contact" class="hover:text-premiumBlue transition">Contact</a>
+                    
+                    <button id="theme-toggle" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-red-400 dark:text-red-300">
+    <i class="fas fa-moon dark:hidden"></i>
+    <i class="fas fa-sun hidden dark:block"></i>
+</button>
+                       <a href="NOURHAN SHABAAN MOHAMED.pdf" download="Nourhan_Mohamed_CV.pdf" class="bg-premiumBlue text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition shadow-lg shadow-blue-200 dark:shadow-none">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-40 pb-24 px-6 overflow-hidden bg-gradient-to-tr from-blue-50 via-white to-white dark:from-slate-900 dark:via-darkBg dark:to-darkBg">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10">
+            <div class="lg:w-3/5 text-center lg:text-left mb-16 lg:mb-0">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-50 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 text-xs font-bold mb-6 tracking-wide border border-rose-100 dark:border-rose-800">
+    <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+    AVAILABLE FOR OPPORTUNITY
+</div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+                    Nourhan Shabaan 
+                </h1>
+                <h2 class="text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 font-medium mb-6">
+                   Frontend Developer &  <span class="text-premiumBlue">Programming Student</span>
+                </h2>
+                <p class="text-slate-500 dark:text-slate-400 text-lg mb-10 max-w-xl leading-relaxed">
+Frontend Developer passionate about building modern, responsive, and user-friendly web applications. Currently expanding my backend skills on the journey to becoming a Full Stack Developer.                </p>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+                    <a href="#projects" class="bg-premiumBlue text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition shadow-xl shadow-blue-200 dark:shadow-none">View Projects</a>
+                    <a href="#contact" class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-8 py-4 rounded-xl font-bold border border-slate-200 dark:border-slate-700 hover:bg-slate-50 transition">Contact Me</a>
+                </div>
+
+                <div class="flex justify-center lg:justify-start gap-6 text-xl text-slate-400">
+                    <a href="https://github.com/nourhan-shabaan" class="hover:text-premiumBlue transition"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nourhan-mohamed-222b71371" class="hover:text-premiumBlue transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/share/1AfFmgjPU1/" class="hover:text-premiumBlue transition"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="lg:w-2/5 flex justify-center lg:justify-end">
+                <div class="hero-img-container">
+                    <img src="m.jpeg" 
+                         onerror="this.src='public/profile.jpg'"
+                         alt="Nourhan Mohamed" 
+                         class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-full border-[12px] border-white dark:border-slate-800 shadow-2xl relative z-20">
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-100 dark:bg-blue-900/20 rounded-full -z-10 blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 bg-white dark:bg-darkBg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-sm font-bold text-premiumBlue tracking-[0.2em] uppercase mb-4">About Me</h2>
+            <div class="w-16 h-1 bg-premiumBlue mx-auto mb-10 rounded-full"></div>
+            <div class="space-y-8">
+                <p class="text-2xl lg:text-3xl leading-relaxed font-light text-slate-700 dark:text-slate-200">
+                    I am a Second-year <strong>Mathematical Statistics and Programming</strong> student at the Faculty of Science, combining analytical rigor with modern web development.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left pt-6">
+                    <div class="p-4 border-l-2 border-blue-100 dark:border-slate-800">
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Proficient in crafting clean, high-performance interfaces using <strong>CSS, HTML, JavaScript, and Bootstrap</strong>. I take pride in my ability to deliver projects with exceptional speed and precision.
+                        </p>
+                    </div>
+
+
+
+<div class="p-4 border-l-2 border-blue-100 dark:border-slate-800">
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+Currently expanding my skills toward full-stack development with backend technologies like PHP and MySQL.                        </p>
+                    </div>
+
+
+
+<div class="p-4 border-l-2 border-blue-100 dark:border-slate-800">
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+I build responsive web applications, landing pages, and interactive UI components </p>  </div>
+
+
+<div class="p-4 border-l-2 border-blue-100 dark:border-slate-800">
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+Strong problem-solving mindset with a fast learning curve and attention to detail</p></div>
+
+
+
+                    <div class="p-4 border-l-2 border-blue-100 dark:border-slate-800">
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Active contributor to the <strong>Masaar Canstructor Scientific Team</strong> scientific research team, where I serve as a Frontend Instructor, helping others master the art of building for the web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-32 px-6 bg-blue-50/50 dark:bg-slate-900/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Education</h2>
+                <div class="w-12 h-1 bg-premiumBlue mx-auto mt-4"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative pl-8 border-l-2 border-premiumBlue">
+                    <div class="absolute -left-2.5 top-0 w-5 h-5 bg-premiumBlue rounded-full ring-4 ring-white dark:ring-darkBg"></div>
+                    <div class="bg-white dark:bg-darkCard p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+                        <span class="text-premiumBlue font-bold text-sm">2023 — 2027 (Expected)</span>
+                        <h3 class="text-2xl font-bold mt-2">B.Sc. in Mathematical Statistics & Programming</h3>
+                        <p class="text-slate-500 mt-1 italic font-medium">Faculty of Science — Department of Mathematical Statistics & Programming</p>
+                        <p class="text-slate-500 mt-1 italic font-medium">
+    Currently focused on strengthening programming fundamentals, data structures,
+    algorithms, and web development alongside academic studies.
+  </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Experience & Training</h2>
+                <div class="w-12 h-1 bg-premiumBlue mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl bg-white dark:bg-darkCard border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-premiumBlue">
+<i class="fa-solid fa-handshake"></i>
+            </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold" style="margin-left:20px;">Frontend Instructor</h3>
+                            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider" style="margin-left:20px;">Frontend Instructor | Masaar Canstructor Scientific Team</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">Instruction and mentoring focused on:</p>
+                    
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">
+Delivered structured guidance in frontend development, focusing on HTML, CSS, and JavaScript fundamentals.
+Assisted students in understanding UI structure, responsive design, and project building logic.
+</p>
+
+<p class="text-slate-600 dark:text-slate-400 mb-6">
+Contributed to improving learners' ability to build real-world web projects through hands-on mentoring.
+</p>
+<div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Frontend Basics</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Advanced CSS</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Project Logic</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-white dark:bg-darkCard border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-premiumBlue">
+                            <i class="fas fa-award text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">Grant Scholar</h3>
+                            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider">National Telecommunication Institute (NTI)</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">Advanced professional development in:</p>
+
+                        <p class="text-slate-600 dark:text-slate-400 mb-6">
+Completed intensive training focused on modern software development concepts, problem-solving, and practical project implementation within a professional technical environment.</p>
+
+<p class="text-slate-600 dark:text-slate-400 mb-6">
+Gained hands-on experience in web technologies, teamwork, software engineering workflows, and building responsive applications using modern development practices.
+</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Software Engineering</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Modern Tech Stacks</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Enterprise Workflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ <section id="Certificates" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Certificates</h2>
+                <div class="w-12 h-1 bg-premiumBlue mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl bg-white dark:bg-darkCard border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-premiumBlue">
+<div class="cert-card">
+  <img src="img.png" alt="Certificate">
+</div>                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold" style="margin-left:20px;">Web Fundamentals Certificate</h3>
+                            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider" style="margin-left:20px;">Frontend Instructor | Masaar Canstructor Scientific Team</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">FRONT-END DEVELOPMENT | WEB TECHNOLOGIES TRACK</p>
+                    
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">
+Learned the basics of web development including HTML, CSS, JavaScript, and responsive web design with practical projects and applications.
+</p>
+
+<p class="text-slate-600 dark:text-slate-400 mb-6">
+Built interactive and responsive web pages while improving problem-solving, project structure, and front-end development skills.
+</p>
+<div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Frontend Basics</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Advanced CSS</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-white dark:bg-darkCard border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center text-premiumBlue">
+                           <div class="cert-card">
+  <img src="Screenshot (712).png" alt="Certificate">
+</div>    
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-extrabold" style="margin-left:20px;">Advanced Web Development Certificate</h3>
+                            <p class="text-slate-400 text-sm font-medium uppercase tracking-wider" style="margin-left:20px;">ADVANCED FRONT-END DEVELOPMENT | MODERN WEB TECHNOLOGIES</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6" style="margin-left:20px;">Advanced training focused on building modern and interactive web applications using advanced front-end development concepts and real-world project implementation.</p>
+
+<p class="text-slate-600 dark:text-slate-400 mb-6" style="margin-left:20px;">
+Developed responsive user interfaces, improved website performance, and applied modern design principles using JavaScript, advanced CSS techniques, and dynamic web functionalities.
+</p>
+                    <div class="flex flex-wrap gap-2"> 
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Advanced JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Sql Database</span>
+                        <span class="px-3 py-1 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs font-semibold">Interactive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="skills" class="py-32 px-6 bg-slate-50 dark:bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-20 text-center">Technical Proficiency</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="space-y-6">
+                    <h4 class="font-bold flex items-center gap-2 text-slate-400 uppercase text-xs tracking-widest"><i class="fas fa-code text-premiumBlue"></i> Frontend Core</h4>
+                    <div class="space-y-4">
+                        <div><div class="flex justify-between text-sm mb-2"><span>HTML5</span><span class="font-bold">99%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 99%"></div></div></div>
+                        <div><div class="flex justify-between text-sm mb-2"><span>CSS3</span><span class="font-bold">98%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 98%"></div></div></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold flex items-center gap-2 text-slate-400 uppercase text-xs tracking-widest"><i class="fas fa-bolt text-premiumBlue"></i> Interactivity</h4>
+                    <div class="space-y-4">
+                        <div><div class="flex justify-between text-sm mb-2"><span>JavaScript</span><span class="font-bold">90%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 90%"></div></div></div>
+                        <div><div class="flex justify-between text-sm mb-2"><span>Bootstrap</span><span class="font-bold">90%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 90%"></div></div></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold flex items-center gap-2 text-slate-400 uppercase text-xs tracking-widest"><i class="fas fa-chart-line text-premiumBlue"></i> Mathematics</h4>
+                    <div class="space-y-4">
+                        <div><div class="flex justify-between text-sm mb-2"><span>Statistics</span><span class="font-bold">85%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 85%"></div></div></div>
+                        <div><div class="flex justify-between text-sm mb-2"><span>Problem Solving</span><span class="font-bold">90%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 90%"></div></div></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold flex items-center gap-2 text-slate-400 uppercase text-xs tracking-widest"><i class="fas fa-globe text-premiumBlue"></i> Communication</h4>
+                    <div class="space-y-4">
+                        <div><div class="flex justify-between text-sm mb-2"><span>English (B2)</span><span class="font-bold">80%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 80%"></div></div></div>
+                        <div><div class="flex justify-between text-sm mb-2"><span>Speed Delivery</span><span class="font-bold">100%</span></div><div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full"><div class="bg-premiumBlue h-1.5 rounded-full" style="width: 100%"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Projects Portfolio</h2>
+            <p class="text-slate-500 text-center mb-16">Selected works and live applications</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+<a href="https://nourhan-shabaan.github.io/CARS1/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Car Showroom</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">Choose Your Car html , css , javascript , Responsive.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                     <video src="CARS2.mp4" controls autoplay poster="Screenshot (708).png"></video>
+                    </div>
+                </a>
+
+ <a href="https://nourhan-shabaan.github.io/AuraBooks-Fullstack-System/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Full-stack library system</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">A library database project designed to efficiently manage books, users, and transactions in an organized system.
+It supports borrowing, reservation, and return processes with accurate tracking of each book’s status.
+The system includes different roles such as admin, writer, and member to ensure proper access control and data security..</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                       <video src="DATABASE.mp4" controls autoplay poster="Screenshot (709).png"></video>
+                    </div>
+                </a>
+
+
+                <a href="https://nourhan-shabaan.github.io/-Skin-Care-Products/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Skin Care Project</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">A responsive skincare web project built using HTML, CSS, and JavaScript, featuring an intuitive UI for exploring skincare routines, tips, and product recommendations.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                    <video src="SKIN CARE PROJECT.mp4" controls autoplay poster="Screenshot (710).png"></video>
+                    </div>
+                </a>
+
+                  <a href="https://nourhan-shabaan.github.io/CAKE-SHOP2/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Skin Care Project</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">A delicious responsive e-commerce interface built with HTML/CSS.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                    <video src="CAKE.mp4" controls autoplay></video>
+                    </div>
+                </a>
+                
+                <a href="https://nourhan-shabaan.github.io/form/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Interactive Forms</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">Clean and functional user registration/contact components.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                         <img src="Screenshot (528).png" alt="Project2">
+                    </div>
+                </a>
+
+                <a href="https://nourhan-shabaan.github.io/Music/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Music Experience</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">Immersive audio-themed web design.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                        <img src="Screenshot (707).png" alt="">
+                    </div>
+                </a>
+
+                <a href="https://nourhan-shabaan.github.io/Technology-/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Technology Blog</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">Modern tech-focused landing page template.</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                      <img src="Screenshot (706).png" alt="">
+                    </div>
+                </a>
+
+
+
+                <a href="https://nourhan-shabaan.github.io/LEETCODE-PAGE/" target="_blank" class="group relative block bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden aspect-[16/9] transition duration-500 hover:shadow-2xl">
+                    <div class="absolute inset-0 bg-blue-600/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">LEETCODE PAGE</h3>
+                        <p class="text-blue-100 text-center text-sm mb-4">Built a responsive LeetCode-style platform for practicing problem solving and improving coding skills through clean UI and interactive challenge pages..</p>
+                        <span class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold text-xs">View Live Site</span>
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                      <img src="Screenshot (715).png" alt="">
+                    </div>
+                </a>
+            </div>
+
+
+            
+
+            <div class="mt-12 text-center">
+                <div class="inline-block px-10 py-16 border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-3xl w-full">
+                    <p class="text-xl font-bold text-slate-300 dark:text-slate-700 uppercase tracking-widest">More Exciting Projects Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 bg-blue-50/30 dark:bg-darkCard/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-black mb-6">Let's Work Together</h2>
+            <p class="text-slate-500 dark:text-slate-400 mb-16 text-lg">I'm currently looking for new opportunities and collaborations.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
+                <a href="https://www.linkedin.com/in/nourhanshabaanmohamed" class="group p-10 bg-white dark:bg-darkCard rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800 text-center">
+                    <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-premiumBlue mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">LinkedIn</h4>
+                </a>
+                <a href="tel:01212746278" class="group p-10 bg-white dark:bg-darkCard rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800 text-center">
+                    <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-premiumBlue mx-auto mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Call Me</h4>
+                    <p class="text-slate-500 text-sm">01212746278</p>
+                </a>
+            </div>
+
+            <div class="flex justify-center space-x-10">
+                <a href="https://github.com/nourhan-shabaan" class="text-slate-300 hover:text-premiumBlue text-3xl transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nourhan-mohamed-222b71371" class="text-slate-300 hover:text-premiumBlue text-3xl transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/share/1AfFmgjPU1/" class="text-slate-300 hover:text-premiumBlue text-3xl transition"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 dark:border-slate-800 text-center">
+        <p class="text-slate-400 text-sm tracking-widest font-medium">&copy; 2026 NOURHAN SHABAAN MOHAMED. CRAFTED WITH PASSION.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+    </script>
+</body>
+</html>
